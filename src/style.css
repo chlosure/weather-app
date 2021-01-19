@@ -1,0 +1,142 @@
+.weather-app {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  border: solid 2px #731719;
+  padding-top: 10px;
+  margin: 50px auto;
+  padding: 10px;
+  max-width: 800px;
+  border-radius: 20px;
+  background-image: linear-gradient(to top, #bbe8e8 0%, #f3976e 80%);
+}
+
+h3 {
+  font-size: 18px;
+  color: #731719;
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+p {
+  color: #731719;
+}
+
+strong {
+  color: #731719;
+}
+
+.col {
+  text-align: center;
+  color: #731719;
+}
+
+#current-temperature {
+  font-size: 92px;
+  color: #731719;
+}
+
+.image-description {
+  font-size: 92px;
+}
+
+.col-12 {
+  color: #731719;
+}
+
+.col-sm {
+  text-align: center;
+  font-size: 20px;
+  color: #731719;
+}
+
+#current-location-button {
+  background: #731719;
+  color: #d1fdff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6%;
+  box-shadow: 0px 2px 3px 0px gray;
+  padding: 5px 10px;
+  display: block;
+  align-items: center;
+}
+
+#current-location-button:hover {
+  background: #da765f;
+  color: #731719;
+}
+
+#search-button {
+  color: #731719;
+  border: solid #731719;
+}
+
+#search-button:hover {
+  background: #731719;
+  color: #da765f;
+}
+
+.current-description {
+  text-transform: capitalize;
+  color: #731719;
+  font-size: 22px;
+}
+
+.open-source-link {
+  text-align: center;
+}
+
+.current-details {
+  text-align: left;
+}
+
+.units .active {
+  color: #731719;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+
+.btn-primary,
+.btn-success {
+  background-color: #731719;
+  border: solid #731719;
+}
+
+.btn-primary,
+.btn-success:hover {
+  background: #d1fdff;
+  color: #731719;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.location {
+  font-size: 35px;
+  color: #411317;
+  text-transform: capitalize;
+  text-align: left;
+  margin: 10px;
+}
+
+.form-control {
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+#day-time {
+  font-size: 22px;
+  color: #411317;
+  text-transform: capitalize;
+  margin-left: 12px;
+}
+
+#description {
+  text-transform: capitalize;
+}
