@@ -151,8 +151,9 @@ strong {
 }
 
 .todays-desc {
-  border: solid 2px;
-  border-color: #731719;
+  border: dotted 2px;
+  border-color: #cad4ca;
   border-radius: 15px;
   padding: 10px;
+  margin-right: 100px;
 }
