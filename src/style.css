@@ -140,3 +140,8 @@ strong {
 #description {
   text-transform: capitalize;
 }
+
+.temperature {
+  font-size: 27px;
+  color: #411317;
+}
