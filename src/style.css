@@ -145,3 +145,14 @@ strong {
   font-size: 27px;
   color: #411317;
 }
+
+.today {
+  color: #411317;
+}
+
+.todays-desc {
+  border: solid 2px;
+  border-color: #731719;
+  border-radius: 15px;
+  padding: 10px;
+}
