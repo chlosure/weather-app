@@ -6,6 +6,7 @@ function formatDay(timestamp) {
 }
 
 function time(timestamp) {
+  // calc the date
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
@@ -26,13 +27,19 @@ function displayWeather(response) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+
+    //Adding weather desc when you inspect icon
   document
     .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
+
   celsiusTemperature = response.data.main.temp;
   document.querySelector(".temperature").innerHTML = Math.round(
     celsiusTemperature
   );
+
+  //dt is the date of Jan 19 1970, we * by 1000 milliseconds to get current date
+  //dates on JS are a timestamp
   document.querySelector("#day-time").innerHTML = time(response.data.dt * 1000);
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
@@ -47,7 +54,7 @@ function displayWeather(response) {
   );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed * 1.60934
+    response.data.wind.speed * 3.6
   );
 }
 
@@ -127,6 +134,7 @@ function showFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector(".temperature");
   temperatureElement.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
+    //remove the active class from the celcius link
   celsius.classList.remove("active");
   fahrenheit.classList.add("active");
 }
